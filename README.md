@@ -24,6 +24,10 @@ composer require lonnyx/nova-apex-chart
 ## Basic Usage
 
 ```php
+use LonnyX\NovaApexChart\NovaApexChart;
+use LonnyX\NovaApexChart\Series\DataOnlySeries;
+use LonnyX\NovaApexChart\formatter\BasicFormatter;
+
 class ExampleNovaResource extends Resource
 {
 
@@ -55,13 +59,13 @@ class ExampleNovaResource extends Resource
 
 Create basic series by calling
 ```php
-use LonnyX\NovaApexChart\BasicSeries;
+use LonnyX\NovaApexChart\Series\BasicSeries;
 new BasicSeries('title', [ 400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380 ]);
 ```
 
 Create data only series by calling
 ```php
-use LonnyX\NovaApexChart\DataOnlySeries;
+use LonnyX\NovaApexChart\Series\DataOnlySeries;
 new DataOnlySeries([ 400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380 ]);
 ```
 
