@@ -26,7 +26,7 @@ composer require lonnyx/nova-apex-chart
 ```php
 use LonnyX\NovaApexChart\NovaApexChart;
 use LonnyX\NovaApexChart\Series\DataOnlySeries;
-use LonnyX\NovaApexChart\formatter\BasicFormatter;
+use LonnyX\NovaApexChart\Formatter\BasicFormatter;
 
 class ExampleNovaResource extends Resource
 {
@@ -71,13 +71,13 @@ new DataOnlySeries([ 400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380 ]);
 
 Create custom formatter
 ```php
-use LonnyX\NovaApexChart\formatter\BasicFormatter;
+use LonnyX\NovaApexChart\Formatter\BasicFormatter;
 new BasicFormatter('$', 'USD');
 ```
 
 Show comma separated numbers
 ```php
-use LonnyX\NovaApexChart\formatter\BasicFormatter;
+use LonnyX\NovaApexChart\Formatter\BasicFormatter;
 new BasicFormatter('', '', true);
 ```
 
